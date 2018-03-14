@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+/*头部*/ 
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    
+    .top-nav {
+        width: 100%;
+        ul {
+            width: 100%;
+            overflow: hidden;
+            padding: 0px 20px;
+        }
+        li {
+            width: 50%;
+            height: 50px;
+            float: left;
+            line-height: 50px;
+            i {
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        li:last-child {
+            text-align: right;
+        }
+       
+    }
+}
+
+/*左边导航区*/
+aside {
+    width: 15%;
+    position: fixed;
+    margin-top: 50px;
+    transform: translateX(-100%);
+    ul {
+        width: 100%;
+        li {
+            width: 100%;
+            background-color: rgba(0,0,0,0.2);
+            transform: translateX(-100%);
+            transition: all 1s;
+        }
+        a  {
+            display: block;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+        }
+    }
+} 
