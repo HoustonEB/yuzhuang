@@ -3,7 +3,7 @@
 // //
 // var flag = true;
 // var flag1 = true;
-// var clickTrue = true;
+var clickTrue = true;
 // /*滚动触发显示内容块*/ 
 // $(window).on('scroll',function(){
 //     // console.log($(this).scrollTop());
@@ -55,57 +55,57 @@
 //     $('.bg1').removeClass('blur')
 // })
 
-// // 侧边导航动画
-// $('#left-btn').on('click',function(){
-//     // console.log($('#aside-nav li').eq(0));
-//     if(clickTrue == false) {
-//         return;
-//     }
-//     console.log(clickTrue);
-//     setTimeout(function(){
-//         $('#aside-nav li').eq(0).css('transform', 'translateX(100%)');
-//     },100);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(1).css('transform', 'translateX(100%)');
-//     }, 200);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(2).css('transform', 'translateX(100%)');
-//     }, 300);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(3).css('transform', 'translateX(100%)');
-//     }, 400);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(4).css('transform', 'translateX(100%)');
-//     }, 500);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(5).css('transform', 'translateX(100%)');
-//         // 此处如果将锁放入外面则先锁后执行定时器-因为定时器没外边的代码执行快要排1
-//         clickTrue = false;
-//     }, 600);
-// });
+// 侧边导航动画
+$('#left-btn').on('click',function(){
+    // console.log($('#aside-nav li').eq(0));
+    if(clickTrue == false) {
+        return;
+    }
+    console.log(clickTrue);
+    setTimeout(function(){
+        $('#aside-nav li').eq(0).css('transform', 'translateX(100%)');
+    },100);
+    setTimeout(function () {
+        $('#aside-nav li').eq(1).css('transform', 'translateX(100%)');
+    }, 200);
+    setTimeout(function () {
+        $('#aside-nav li').eq(2).css('transform', 'translateX(100%)');
+    }, 300);
+    setTimeout(function () {
+        $('#aside-nav li').eq(3).css('transform', 'translateX(100%)');
+    }, 400);
+    setTimeout(function () {
+        $('#aside-nav li').eq(4).css('transform', 'translateX(100%)');
+    }, 500);
+    setTimeout(function () {
+        $('#aside-nav li').eq(5).css('transform', 'translateX(100%)');
+        // 此处如果将锁放入外面则先锁后执行定时器-因为定时器没外边的代码执行快要排1
+        clickTrue = false;
+    }, 600);
+});
 
-// $('#left-btn').on('click', function () {
-//     // console.log($('#aside-nav li').eq(0));
-//     if(clickTrue == true) {
-//         return;
-//     }
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(0).css('transform', 'translateX(-100%)');
-//     }, 100);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(1).css('transform', 'translateX(-100%)');
-//     }, 200);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(2).css('transform', 'translateX(-100%)');
-//     }, 300);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(3).css('transform', 'translateX(-100%)');
-//     }, 400);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(4).css('transform', 'translateX(-100%)');
-//     }, 500);
-//     setTimeout(function () {
-//         $('#aside-nav li').eq(5).css('transform', 'translateX(-100%)');
-//         clickTrue = true;
-//     }, 600);
-// });
+$('#left-btn').on('click', function () {
+    // console.log($('#aside-nav li').eq(0));
+    if(clickTrue == true) {
+        return;
+    }
+    setTimeout(function () {
+        $('#aside-nav li').eq(0).css('transform', 'translateX(-100%)');
+    }, 100);
+    setTimeout(function () {
+        $('#aside-nav li').eq(1).css('transform', 'translateX(-100%)');
+    }, 200);
+    setTimeout(function () {
+        $('#aside-nav li').eq(2).css('transform', 'translateX(-100%)');
+    }, 300);
+    setTimeout(function () {
+        $('#aside-nav li').eq(3).css('transform', 'translateX(-100%)');
+    }, 400);
+    setTimeout(function () {
+        $('#aside-nav li').eq(4).css('transform', 'translateX(-100%)');
+    }, 500);
+    setTimeout(function () {
+        $('#aside-nav li').eq(5).css('transform', 'translateX(-100%)');
+        clickTrue = true;
+    }, 600);
+});
