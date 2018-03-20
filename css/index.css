@@ -12,7 +12,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 999;
-  background-color: #5a5757;
+  background-color: transparent;
 }
 header .top-nav {
   width: 100%;
@@ -31,30 +31,27 @@ header .top-nav li {
   transform: translateY(-50px);
   background-color: #58b9e6;
   transition: all 400ms;
+  border-radius: 2px;
+  margin-right: 10px;
 }
 header .top-nav li i {
-  font-size: 18px;
-  color: #fff;
+  font-size: 24px;
+  color: #000;
 }
 header .top-nav li a {
   display: block;
-  width: 100%;
 }
 header .top-nav li:first-child {
+  width: auto;
   transform: translateY(0px);
-  background-color: #5a5757;
+  background-color: transparent;
+  margin-left: 20px;
 }
-header .top-nav li:first-child a {
-  display: inline;
-}
-header .top-nav li:last-child {
-  float: right;
-  text-align: center;
+header .top-nav li:nth-child(2) {
+  width: auto;
   transform: translateY(0px);
-  background-color: #5a5757;
-}
-header .top-nav li:last-child a {
-  display: inline;
+  background-color: transparent;
+  margin-right: 200px;
 }
 /*滚动区域*/
 .intro {
@@ -149,4 +146,23 @@ header .top-nav li:last-child a {
 }
 .intro li:last-child {
   flex: 1;
+}
+.intro_content {
+  width: 600px;
+  height: 600px;
+  margin-top: 50px;
+  float: left;
+  box-shadow: 0 0 5px 1px #363535;
+  text-align: center;
+  margin-left: 100px;
+}
+.intro-pie {
+  width: 600px;
+  height: 700px;
+  float: left;
+}
+.first {
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }

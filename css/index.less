@@ -13,7 +13,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 999;
-    background-color: rgb(90, 87, 87);
+    background-color: transparent;
     .top-nav {
         width: 100%;
         ul {
@@ -30,30 +30,28 @@ header {
             transform: translateY(-50px);
             background-color: rgb(88, 185, 230);
             transition: all 400ms;
+            // box-shadow: 0 0 0 1px #fff;
+            border-radius: 2px;
+            margin-right: 10px;
             i {
-                font-size: 18px;
-                color: #fff;
+                font-size: 24px;
+                color: #000;
             }
             a {
                 display: block;
-                width: 100%;
             }
         }
         li:first-child {
+            width: auto;
             transform: translateY(0px);
-            background-color: rgb(90, 87, 87);
-             a {
-                display: inline;
-            }
+            background-color: transparent;
+            margin-left: 20px;
         }
-        li:last-child {
-            float: right;
-            text-align: center;
+        li:nth-child(2) {
+            width: auto;
             transform: translateY(0px);
-            background-color: rgb(90, 87, 87);
-             a {
-                display: inline;
-            }
+            background-color: transparent;
+            margin-right: 200px;
         }
        
     }
@@ -155,4 +153,29 @@ header {
      li:last-child {
         flex: 1;
     }
+
+
+}
+
+// 简介内容区
+.intro_content {
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+    float: left;
+    box-shadow: 0 0 5px 1px rgb(54, 53, 53);
+    text-align: center;
+    margin-left: 100px;
+}
+// 饼图区
+.intro-pie {
+    width: 600px;
+    height: 700px;
+    float: left;
+}
+
+.first {
+    background-image: url('../images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
